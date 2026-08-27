@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a class="nav-brand" href="#top">Javeria Kamran<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Project Details</a></li>
+      <li><a href="#recommendations">Recommendations</a></li>
+    </ul>
+    <!-- Home Icon Button -->
+    <a href="#top" class="home-icon" title="Go to Top" aria-label="Go to top">
+      &#8962;
+    </a>
+  </nav>
+
+  <!-- About Me Section -->
+  <section id="about" class="section">
+    <div class="profile-container">
+      <div class="profile-copy">
+        <p class="eyebrow">Frontend developer / curious builder</p>
+        <h1 class="profile-name">Javeria Kamran<span>.</span></h1>
+        <p class="profile-summary">
+          I turn thoughtful ideas into clear, responsive digital experiences. My work blends precise interface craft with accessible code and a little healthy curiosity.
+        </p>
+        <a class="profile-link" href="#projects">Explore my work <span aria-hidden="true">&rarr;</span></a>
+      </div>
+      <div class="profile-visual">
+        <div class="profile-art" aria-label="Javeria Kamran design details">
+          <span class="art-corner">Portfolio / 2026</span>
+          <div class="art-monogram" aria-hidden="true"><strong>J</strong><strong>K</strong></div>
+          <span class="art-rule"></span>
+        </div>
+        <span class="visual-note">Frontend / UI / Code</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="section-heading"><p class="eyebrow">What I use</p><h2>Skills</h2></div>
+    <div class="skills-grid">
+      <!-- Default Skills -->
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 Logo">
+        <span>HTML5</span>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 Logo">
+        <span>CSS3</span>
+      </div>
+      <!-- Three New Skills -->
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript Logo">
+        <span>JavaScript</span>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Logo">
+        <span>React</span>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git Logo">
+        <span>Git & GitHub</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="section-heading"><p class="eyebrow">Selected work</p><h2>Projects</h2></div>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>E-Commerce Web Application</h3>
+        <p>A full-featured shopping cart application built using modern JavaScript and responsive CSS grid styling.</p>
+      </div>
+      <div class="project-card">
+        <h3>Task Management Dashboard</h3>
+        <p>An interactive productivity web application that allows users to create, track, and manage daily objectives.</p>
+      </div>
+      <div class="project-card">
+        <h3>Weather Analytics Platform</h3>
+        <p>A real-time weather web application integrating asynchronous API calls to show dynamic meteorological forecasts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommendations Section -->
+  <section id="recommendations" class="section">
+    <div class="section-heading"><p class="eyebrow">Good words</p><h2>Recommendations</h2></div>
+    <div class="recommendations-container" id="recommendation-list">
+      <div class="recommendation-card">
+        <p>"An exceptional developer with a sharp eye for modern layout design and efficient frontend architecture."</p>
+        <span>- Alex Morgan, Senior Engineering Lead</span>
+      </div>
+      <div class="recommendation-card">
+        <p>"Demonstrates consistent dedication, high-quality code standards, and great collaborative skills in team projects."</p>
+        <span>- Sarah Jenkins, Product Manager</span>
+      </div>
+      <div class="recommendation-card">
+        <p>"A fast learner who quickly master complex frameworks and delivers clean, maintainable web components."</p>
+        <span>- David Chen, Full Stack Architect</span>
+      </div>
+    </div>
+
+    <!-- Recommendation Submission Form -->
+    <div class="recommendation-form-container">
+      <h3>Leave a Recommendation</h3>
+      <form id="recommendation-form">
+        <input type="text" id="rec-name" placeholder="Your Name / Title" required>
+        <textarea id="rec-text" placeholder="Write your recommendation here..." required></textarea>
+        <button type="submit">Submit Recommendation</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
