@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Javeria Kamran — Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- mobile top bar -->
+<header class="mobile-bar">
+  <span class="mobile-bar__logo">Javeria<span class="dot">.</span>Kamran</span>
+  <button class="mobile-bar__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="layout">
+
+  <!-- left directory-style nav -->
+  <nav class="rail" id="rail">
+    <div class="rail__top">
+      <p class="rail__logo">Javeria<span class="dot">.</span>Kamran</p>
+      <p class="rail__role">software engineer</p>
+    </div>
+
+    <ul class="rail__tree">
+      <li><a href="#home" class="rail__link" data-section="home"><span class="rail__glyph">~</span>home</a></li>
+      <li><a href="#about" class="rail__link" data-section="about"><span class="rail__glyph">./</span>about</a></li>
+      <li><a href="#work" class="rail__link" data-section="work"><span class="rail__glyph">./</span>projects</a></li>
+      <li><a href="#skills" class="rail__link" data-section="skills"><span class="rail__glyph">./</span>skills</a></li>
+      <li><a href="#contact" class="rail__link" data-section="contact"><span class="rail__glyph">./</span>contact</a></li>
+    </ul>
+
+    <div class="rail__bottom">
+      <a href="https://github.com" target="_blank" rel="noopener" class="rail__social">github</a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener" class="rail__social">linkedin</a>
+      <a href="mailto:hello@ariavoss.dev" class="rail__social">email</a>
+    </div>
+  </nav>
+
+  <div class="scrim" id="scrim"></div>
+
+  <!-- main content -->
+  <main class="content">
+
+    <!-- ============ HERO ============ -->
+    <section id="home" class="hero">
+      <div class="hero__text">
+        <p class="hero__kicker">$ whoami</p>
+        <h1 class="hero__title">
+          Javeria Kamran builds<br>
+          interfaces that feel<br>
+          <span class="hero__accent">inevitable.</span>
+        </h1>
+        <p class="hero__role">
+          <span id="typewriter"></span><span class="cursor">_</span>
+        </p>
+        <p class="hero__desc">
+          Front-end focused software engineer. Six years turning
+          ambitious product ideas into fast, accessible, well-tested
+          interfaces — from design system to deploy.
+        </p>
+        <div class="hero__actions">
+          <a href="#work" class="btn btn--solid">View projects</a>
+          <a href="#contact" class="btn btn--ghost">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="hero__stage" aria-hidden="true">
+        <div class="cube-wrap" id="cubeWrap">
+          <div class="cube" id="cube">
+            <div class="cube__face cube__face--front"></div>
+            <div class="cube__face cube__face--back"></div>
+            <div class="cube__face cube__face--right"></div>
+            <div class="cube__face cube__face--left"></div>
+            <div class="cube__face cube__face--top"></div>
+            <div class="cube__face cube__face--bottom"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="about">
+      <p class="section-path">/about.md</p>
+      <div class="window">
+        <div class="window__bar">
+          <span class="dotc dotc--r"></span><span class="dotc dotc--y"></span><span class="dotc dotc--g"></span>
+          <span class="window__name">about.md</span>
+        </div>
+        <div class="window__body about__body">
+          <p>
+            I'm a software engineer based in Toronto, currently building
+            design infrastructure for teams that ship fast without breaking
+            things. I got into this field by breaking my school's website
+            for fun — I've been making up for it ever since.
+          </p>
+          <p>
+            My work sits at the seam between engineering and design: I care
+            about type scales and load times in equal measure. I've led
+            front-end architecture at two Series B startups, mentored
+            junior engineers, and shipped products used by millions of
+            people who will never know my name — which is exactly how it
+            should be.
+          </p>
+          <p>
+            Off-screen: analog film photography, long-distance running,
+            and an unreasonable number of mechanical keyboards.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="work" class="work">
+      <p class="section-path">/projects</p>
+
+      <div class="work__grid">
+
+        <article class="card">
+          <div class="card__bar">
+            <span class="dotc dotc--r"></span><span class="dotc dotc--y"></span><span class="dotc dotc--g"></span>
+            <span class="card__name">ledger-ui/</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Ledger</h3>
+            <p class="card__desc">
+              A component library and design token pipeline for a fintech
+              platform, adopted across 12 product teams. Cut new-feature
+              build time by roughly a third.
+            </p>
+            <ul class="card__tags">
+              <li>TypeScript</li><li>React</li><li>Storybook</li><li>Figma Tokens</li>
+            </ul>
+            <div class="card__links">
+              <a href="#" class="card__link">Case study</a>
+              <a href="#" class="card__link">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__bar">
+            <span class="dotc dotc--r"></span><span class="dotc dotc--y"></span><span class="dotc dotc--g"></span>
+            <span class="card__name">orbit/</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Orbit</h3>
+            <p class="card__desc">
+              Real-time collaborative canvas for remote design reviews —
+              CRDT-backed sync, sub-100ms cursor latency for teams of up
+              to 40 concurrent editors.
+            </p>
+            <ul class="card__tags">
+              <li>Rust</li><li>WebSockets</li><li>Canvas API</li><li>WASM</li>
+            </ul>
+            <div class="card__links">
+              <a href="#" class="card__link">Case study</a>
+              <a href="#" class="card__link">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__bar">
+            <span class="dotc dotc--r"></span><span class="dotc dotc--y"></span><span class="dotc dotc--g"></span>
+            <span class="card__name">field-notes/</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Field Notes</h3>
+            <p class="card__desc">
+              A minimal writing tool for engineers documenting incidents
+              in the moment — offline-first, markdown-native, synced
+              when connectivity returns.
+            </p>
+            <ul class="card__tags">
+              <li>Svelte</li><li>IndexedDB</li><li>Service Workers</li>
+            </ul>
+            <div class="card__links">
+              <a href="#" class="card__link">Case study</a>
+              <a href="#" class="card__link">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__bar">
+            <span class="dotc dotc--r"></span><span class="dotc dotc--y"></span><span class="dotc dotc--g"></span>
+            <span class="card__name">pathfinder/</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Pathfinder</h3>
+            <p class="card__desc">
+              An accessibility auditing CLI that walks a site's render
+              tree and flags contrast, focus-order, and ARIA issues
+              before they hit review.
+            </p>
+            <ul class="card__tags">
+              <li>Node.js</li><li>Puppeteer</li><li>axe-core</li>
+            </ul>
+            <div class="card__links">
+              <a href="#" class="card__link">Case study</a>
+              <a href="#" class="card__link">Source</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="skills">
+      <p class="section-path">/skills</p>
+      <div class="window">
+        <div class="window__bar">
+          <span class="dotc dotc--r"></span><span class="dotc dotc--y"></span><span class="dotc dotc--g"></span>
+          <span class="window__name">skills.json</span>
+        </div>
+        <div class="window__body skills__body">
+
+          <div class="skill-row">
+            <span class="skill-row__comment">// languages</span>
+            <ul class="tag-list">
+              <li>TypeScript</li><li>JavaScript</li><li>Rust</li><li>Python</li><li>Go</li>
+            </ul>
+          </div>
+
+          <div class="skill-row">
+            <span class="skill-row__comment">// front-end</span>
+            <ul class="tag-list">
+              <li>React</li><li>Svelte</li><li>Vue</li><li>WebGL</li><li>Tailwind</li>
+            </ul>
+          </div>
+
+          <div class="skill-row">
+            <span class="skill-row__comment">// back-end &amp; infra</span>
+            <ul class="tag-list">
+              <li>Node.js</li><li>PostgreSQL</li><li>Docker</li><li>AWS</li><li>Terraform</li>
+            </ul>
+          </div>
+
+          <div class="skill-row">
+            <span class="skill-row__comment">// tooling</span>
+            <ul class="tag-list">
+              <li>Vite</li><li>Storybook</li><li>Figma</li><li>Playwright</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="contact">
+      <p class="section-path">/contact</p>
+
+      <div class="window contact__window">
+        <div class="window__bar">
+          <span class="dotc dotc--r"></span><span class="dotc dotc--y"></span><span class="dotc dotc--g"></span>
+          <span class="window__name">send_message.sh</span>
+        </div>
+        <div class="window__body contact__body">
+          <p class="contact__intro">
+            <span class="prompt">$</span> Have a role, a project, or just
+            want to talk shop? My inbox is open.
+          </p>
+
+          <form class="form" id="contactForm" novalidate>
+            <div class="field">
+              <label for="name">--name</label>
+              <input type="text" id="name" name="name" placeholder="Jordan Lee" required>
+            </div>
+            <div class="field">
+              <label for="email">--email</label>
+              <input type="email" id="email" name="email" placeholder="jordan@company.com" required>
+            </div>
+            <div class="field">
+              <label for="message">--message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell me a little about what you're building..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--solid" id="sendBtn">Run ./send</button>
+            <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> Javeria Kamran. Built with HTML, CSS &amp; JS — no framework, on purpose.</p>
+    </footer>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
